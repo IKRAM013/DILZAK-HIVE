@@ -2,60 +2,84 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #fffaf2;
+    font-family: 'Poppins', sans-serif;
+    background: #0b1d3a;
+    color: white;
 }
 
+/* HEADER */
 header {
     position: fixed;
     width: 100%;
-    background: #e76f51;
-    color: white;
+    background: #081229;
     display: flex;
     justify-content: space-between;
-    padding: 15px 8%;
     align-items: center;
+    padding: 15px 8%;
+    border-bottom: 2px solid gold;
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    color: gold;
 }
 
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: gold;
 }
 
 .cart {
     font-weight: bold;
 }
 
+/* HERO */
 .hero {
     height: 100vh;
-    background: url("https://images.unsplash.com/photo-1505577058444-a3dab90d4253") center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("https://images.unsplash.com/photo-1505577058444-a3dab90d4253") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-family: 'Cinzel', serif;
+    color: gold;
 }
 
 .hero button {
-    padding: 10px 25px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: gold;
+    color: black;
     border: none;
-    background: #f4a261;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
+/* PRODUCTS */
 .products {
     padding: 100px 8%;
     text-align: center;
+}
+
+.products h2 {
+    color: gold;
+    font-family: 'Cinzel', serif;
 }
 
 .product-grid {
@@ -67,11 +91,17 @@ nav a {
 }
 
 .product-card {
-    background: white;
+    background: #112a4d;
     padding: 20px;
-    width: 250px;
+    width: 260px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid gold;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px gold;
 }
 
 .product-card img {
@@ -82,36 +112,48 @@ nav a {
 .product-card button {
     margin-top: 10px;
     padding: 8px 15px;
-    background: #264653;
-    color: white;
+    background: gold;
+    color: black;
     border: none;
     cursor: pointer;
-}
-
-.order-section {
-    margin-top: 40px;
+    font-weight: bold;
 }
 
 .order-btn {
-    padding: 12px 30px;
-    background: #2a9d8f;
-    color: white;
+    margin-top: 40px;
+    padding: 14px 35px;
+    background: gold;
+    color: black;
     border: none;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    font-weight: bold;
 }
 
+/* ABOUT */
+.about {
+    display: flex;
+    padding: 80px 8%;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about h2 {
+    color: gold;
+}
+
+/* CONTACT */
 .contact {
-    background: #e76f51;
-    color: white;
+    background: #081229;
     text-align: center;
-    padding: 50px;
+    padding: 60px;
+    border-top: 2px solid gold;
 }
 
 footer {
-    background: #264653;
-    color: white;
+    background: black;
     text-align: center;
     padding: 15px;
+    color: gold;
 }

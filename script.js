@@ -3,14 +3,14 @@ let cartCount = 0;
 function addToCart() {
     cartCount++;
     document.getElementById("cart-count").innerText = cartCount;
-    alert("Item added to cart 🛒");
+    alert("Royal item added to cart 👑");
 }
 
 function placeOrder() {
     if (cartCount === 0) {
-        alert("Your cart is empty!");
+        alert("Your royal cart is empty!");
     } else {
-        alert("🎉 Order Placed Successfully!\nThank you for shopping at Dilzak Hive.");
+        alert("👑 Royal Order Placed Successfully!\nThank you for choosing Dilzak Hive.");
         cartCount = 0;
         document.getElementById("cart-count").innerText = cartCount;
     }
